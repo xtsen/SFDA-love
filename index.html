@@ -1,3 +1,20 @@
+<!--
+
+
+
+
+
+===          ===     =============   ===========        ==========    ====      |
+   ===    ===              |         \                  |             |   \     |
+      ====         X       |    T     \ ========  S     ========   E  |    \    |   N
+   ===    ===              |                   /        |             |     \   |
+===          ===           |         =========/   *     ==========    |      ====
+
+@Xtsen.exe sur instagram 
+
+2021
+
+-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,15 +22,20 @@
         <title>SFDA love</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <script type="text/javascript" >
-            function randomLove() {
-                index = Math.floor(Math.random() * 10);
+            function randomLove(TypeName) {
+                ListBoyName = ["Gabriel", "Maxent", "Léo", "Raphaël", "Arthur", "Louis", "Lucas", "Adam", "Jules", "Hugo", "Maël", "Liam", "Noah", "Paul", "Ethan", "Tiago", "Sacha", "Gabin", "Nathan", "Mohamed", "Tom", "Noé", "Théo", "Léon", "Martin", "Mathis", "Nolan", "Victor", "Timéo", "Enzo", "Marius", "Axel", "Antoine", "Robin", "Naël", "Amir", "Valentin", "Rayan", "Augustin", "Clément", "Eliott", "Samuel", "Marceau", "Baptiste", "Gaspard", "Maxence", "Yanis", "Malo", "Ibrahim", "Sohan", "Maxime", "Evan", "Nino", "Mathéo", "Simon", "Lyam", "Alexandre", "Naïm", "Thomas", "Milo", "Ismaël", "Owen", "Lenny", "Soan", "Ilyan", "Kylian", "Noa", "Oscar", "Ilyes", "Léandre", "Pablo", "Diego", "Mathys", "Joseph", "Ayoub", "Noam", "William", "Charles", "Basile", "Thiago", "Antonnin", "Logan", "Adrien", "Marin", "Jean", "Charly", "Esteban", "Noham", "Elio"];
+                inputLove = document.getElementById("inputLove");
+                randomNumber = Math.floor(Math.random() * 90);
+                console.log(randomNumber)
+                console.log(ListBoyName[randomNumber])
+                inputLove.value = ListBoyName[randomNumber]
             }
         </script>
     </head>
     <body>
         <div class="contain">
             <h1 class="bigTitle">Voulez vous connaitre le prénom de votre âme soeur ?</h1>
-            <input id="inputLove" type="text">
+            <input id="inputLove" type="text" disabled="disabled">
             <div class="buttonSpin" onclick="randomLove()">Spin</div>
         </div>
     </body>

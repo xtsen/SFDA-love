@@ -12,6 +12,7 @@ body  {
     margin-left: 3%;
 }
 .buttonChoice {
+    text-align: center;
     cursor: pointer;
     border-radius: 70px;
     color: #fff;
@@ -20,7 +21,7 @@ body  {
     padding-right: 40px;
     padding-bottom: 10px;
     padding-top: 10px;
-    margin-left: 44%;
+    margin-right: 5%;
     font-size: 18px;
     border: 1px solid #fff;
     width: 10%;
@@ -28,6 +29,7 @@ body  {
 .listChoice {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-radius: 15px;
     width: fit-content;
     color: white;
@@ -55,12 +57,12 @@ body  {
     box-sizing: border-box;
     border: 2px solid rgba(0, 0, 0, 0.02);
     margin-bottom: 50px;
-    margin-left: 46px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     margin-bottom: 27px;
 }
-.buttonSpin {
-    cursor: pointer;
+#resultSpin {
     border-radius: 70px;
     color: #fff;
     background: linear-gradient(to right, #9C27B0, #E040FB);
@@ -68,8 +70,9 @@ body  {
     padding-right: 40px;
     padding-bottom: 10px;
     padding-top: 10px;
-    margin-left: 44%;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 18px;
     border: 1px solid #fff;
-    width: 10%;
+    width: fit-content;
 }

@@ -90,6 +90,11 @@
         border: 1px solid #fff;
         width: fit-content;
     }
+    .Listes {
+        margin-top: 90%;
+        width: 100%;
+        text-align: center;
+    }
 }
 @media screen and (min-width:1020px) {
     body {
@@ -182,5 +187,16 @@
         font-size: 18px;
         border: 1px solid #fff;
         width: fit-content;
+    }
+    .Listes {
+        margin-top: 10%;
+        width: 100%;
+        text-align: center;
+    }
+    .ZoneListeBoy {
+        cursor: pointer;
+    }
+    .ZoneListeGirl {
+        cursor: pointer;
     }
 }

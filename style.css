@@ -57,6 +57,7 @@
         text-align: center;
     }
     .bigTitle {
+        font-size: 300%;
         text-align: center;
         margin-top: 5%;
         margin-bottom: 10%;
@@ -65,7 +66,7 @@
         color: white;
         width: 40%;
         font-weight: 700;
-        font-size: 190%;
+        font-size: 270%;
         background: rgba(59, 55, 55, 0.253);
         padding: 10px 20px;
         border-radius: 20px;
@@ -94,6 +95,18 @@
         margin-top: 90%;
         width: 100%;
         text-align: center;
+    }
+    .ZoneListeBoy  {
+        font-size: 200%;
+    }
+    #listBoy {
+        font-size: 70%;
+    }
+    .ZoneListeGirl  {
+        font-size: 200%;
+    }
+    #listGirl {
+        font-size: 70%;
     }
 }
 @media screen and (min-width:1020px) {

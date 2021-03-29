@@ -212,6 +212,18 @@
     .ZoneListeGirl {
         cursor: pointer;
     }
+    .ZoneListeBoy  {
+        font-size: 130%;
+    }
+    #listBoy {
+        font-size: 100%;
+    }
+    .ZoneListeGirl  {
+        font-size: 130%;
+    }
+    #listGirl {
+        font-size: 100%;
+    }
     .lienContact {
         color: white;
         text-decoration: 2px underline white;

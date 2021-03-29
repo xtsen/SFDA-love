@@ -212,4 +212,11 @@
     .ZoneListeGirl {
         cursor: pointer;
     }
+    .lienContact {
+        color: white;
+        text-decoration: 2px underline white;
+    }
+}
+footer {
+    bottom: 0%;
 }

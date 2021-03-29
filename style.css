@@ -1,8 +1,46 @@
-.contain {
+body  {
+    font-family: 'Open Sans', sans-serif;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+.orientation {
+    font-size: 130%;
+    margin-left: 3%;
+}
+.buttonChoice {
+    cursor: pointer;
+    border-radius: 70px;
+    color: #fff;
+    background: linear-gradient(to right, #9C27B0, #E040FB);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 44%;
+    font-size: 18px;
+    border: 1px solid #fff;
+    width: 10%;
+}
+.listChoice {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    width: fit-content;
+    color: white;
+    width: 100%;
+    background-color: rgb(94, 94, 94);
+    margin-bottom: 1%;
+}
+#containSpin {
     text-align: center;
     color: black;
 }
 .bigTitle {
+    text-align: center;
     margin-top: 5%;
     margin-bottom: 10%;
 }
@@ -33,6 +71,5 @@
     margin-left: 44%;
     font-size: 18px;
     border: 1px solid #fff;
-    width: 10%
-    ;
+    width: 10%;
 }

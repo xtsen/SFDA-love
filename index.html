@@ -21,19 +21,57 @@
         <meta charset="utf-8"/>
         <title>SFDA love</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
         <script type="text/javascript" >
+            function showSpin() {
+                divSpin = document.getElementById("containSpin");
+                divSpin.className = "show";
+                divChoice = document.getElementById("containChoice");
+                divChoice.className = "hide";
+            }
             function randomLove(TypeName) {
                 ListBoyName = ["Gabriel", "Maxent", "Léo", "Raphaël", "Arthur", "Louis", "Lucas", "Adam", "Jules", "Hugo", "Maël", "Liam", "Noah", "Paul", "Ethan", "Tiago", "Sacha", "Gabin", "Nathan", "Mohamed", "Tom", "Noé", "Théo", "Léon", "Martin", "Mathis", "Nolan", "Victor", "Timéo", "Enzo", "Marius", "Axel", "Antoine", "Robin", "Naël", "Amir", "Valentin", "Rayan", "Augustin", "Clément", "Eliott", "Samuel", "Marceau", "Baptiste", "Gaspard", "Maxence", "Yanis", "Malo", "Ibrahim", "Sohan", "Maxime", "Evan", "Nino", "Mathéo", "Simon", "Lyam", "Alexandre", "Naïm", "Thomas", "Milo", "Ismaël", "Owen", "Lenny", "Soan", "Ilyan", "Kylian", "Noa", "Oscar", "Ilyes", "Léandre", "Pablo", "Diego", "Mathys", "Joseph", "Ayoub", "Noam", "William", "Charles", "Basile", "Thiago", "Antonnin", "Logan", "Adrien", "Marin", "Jean", "Charly", "Esteban", "Noham", "Elio"];
                 inputLove = document.getElementById("inputLove");
                 randomNumber = Math.floor(Math.random() * 90);
-                console.log(randomNumber)
-                console.log(ListBoyName[randomNumber])
                 inputLove.value = ListBoyName[randomNumber]
             }
         </script>
     </head>
     <body>
-        <div class="contain">
+        <div id="containChoice">
+            <h1 class="bigTitle">Selectionnez votre orientation</h1>
+
+            <div class="listChoice" class="hetero">
+                <p class="orientation" id="heteroP">Heterosexuelle</p>
+                <div class="buttonChoice" onclick="showSpin()">Choisir</div>
+            </div>
+            <div class="listChoice" class="bi">
+                <p class="orientation" id="heteroP">Bisexuelle</p>
+                <div class="buttonChoice" onclick="showSpin()">Choisir</div>
+            </div>
+            <div class="listChoice" class="homoBoy">
+                <p class="orientation" id="homoBoyP">Gay</p>
+                <div class="buttonChoice" onclick="showSpin()">Choisir</div>
+            </div>
+            <div class="listChoice" class="homoGirl">
+                <p class="orientation" id="homoGirlP">Lesbienne</p>
+                <div class="buttonChoice" onclick="showSpin()">Choisir</div>
+            </div>
+            <div class="listChoice" class="pansexuelle">
+                <p class="orientation" id="pansP">Pansexuelle</p>
+                <div class="buttonChoice" onclick="showSpin()">Choisir</div>
+            </div>
+            <div class="listChoice" class="aromantique">
+                <p class="orientation" id="aroP">Aromantique</p>
+                <div class="buttonChoice" onclick="showSpin()">Choisir</div>
+            </div>
+            <div class="listChoice" class="asexuelle">
+                <p class="orientation" id="asexP">Asexuelle</p>
+                <div class="buttonChoice" onclick="showSpin()">Choisir</div>
+            </div>
+        </div>
+        <div class="hide" id="containSpin" >
             <h1 class="bigTitle">Voulez vous connaitre le prénom de votre âme soeur ?</h1>
             <input id="inputLove" type="text" disabled="disabled">
             <div class="buttonSpin" onclick="randomLove()">Spin</div>

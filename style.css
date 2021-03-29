@@ -1,78 +1,186 @@
-body  {
-    font-family: 'Open Sans', sans-serif;
+@media screen and (min-width:319px) {
+    body {
+        color: white;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    .show {
+        display: block;
+    }
+    .hide {
+        display: none;
+    }
+    .orientation {
+        font-size: 280%;
+        margin-left: 3%;
+    }
+    .buttonChoice {
+        text-align: center;
+        cursor: pointer;
+        border-radius: 70px;
+        background: linear-gradient(to right, #9C27B0, #E040FB);
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-right: 5%;
+        font-size: 180%;
+        border: 1px solid #fff;
+        width: 10%;
+    }
+    .listChoice {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 15px;
+        width: fit-content;
+        color: white;
+        width: 100%;
+        background-color: rgb(94, 94, 94);
+        margin-bottom: 1%;
+    }
+    #containSpin {
+        text-align: center;
+    }
+    .bigTitle {
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    #inputLove {
+        color: white;
+        width: 40%;
+        font-weight: 700;
+        font-size: 190%;
+        background: rgba(59, 55, 55, 0.253);
+        padding: 10px 20px;
+        border-radius: 20px;
+        box-sizing: border-box;
+        border: 2px solid rgba(0, 0, 0, 0.02);
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 27px;
+    }
+    #resultSpin {
+        border-radius: 70px;
+        background: linear-gradient(to right, #9C27B0, #E040FB);
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        border: 1px solid #fff;
+        width: fit-content;
+    }
 }
-.show {
-    display: block;
-}
-.hide {
-    display: none;
-}
-.orientation {
-    font-size: 130%;
-    margin-left: 3%;
-}
-.buttonChoice {
-    text-align: center;
-    cursor: pointer;
-    border-radius: 70px;
-    color: #fff;
-    background: linear-gradient(to right, #9C27B0, #E040FB);
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-right: 5%;
-    font-size: 18px;
-    border: 1px solid #fff;
-    width: 10%;
-}
-.listChoice {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 15px;
-    width: fit-content;
-    color: white;
-    width: 100%;
-    background-color: rgb(94, 94, 94);
-    margin-bottom: 1%;
-}
-#containSpin {
-    text-align: center;
-    color: black;
-}
-.bigTitle {
-    text-align: center;
-    margin-top: 5%;
-    margin-bottom: 10%;
-}
-#inputLove {
-    width: 40%;
-    color: rgb(38, 50, 56);
-    font-weight: 700;
-    font-size: 110%;
-    background: rgba(136, 126, 126, 0.253);
-    padding: 10px 20px;
-    border-radius: 20px;
-    box-sizing: border-box;
-    border: 2px solid rgba(0, 0, 0, 0.02);
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-bottom: 27px;
-}
-#resultSpin {
-    border-radius: 70px;
-    color: #fff;
-    background: linear-gradient(to right, #9C27B0, #E040FB);
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 18px;
-    border: 1px solid #fff;
-    width: fit-content;
+@media screen and (min-width:1020px) {
+    body {
+        color: white;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    .show {
+        display: block;
+    }
+    .hide {
+        display: none;
+    }
+    .orientation {
+        font-size: 130%;
+        margin-left: 3%;
+    }
+    .buttonChoice {
+        text-align: center;
+        cursor: pointer;
+        border-radius: 70px;
+        background: linear-gradient(to right, #9C27B0, #E040FB);
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-right: 5%;
+        font-size: 18px;
+        border: 1px solid #fff;
+        width: 10%;
+    }
+    .listChoice {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 15px;
+        width: fit-content;
+        color: white;
+        width: 100%;
+        background-color: rgb(94, 94, 94);
+        margin-bottom: 1%;
+    }
+    #containSpin {
+        text-align: center;
+    }
+    .bigTitle {
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    #inputLove {
+        color: white;
+        width: 40%;
+        font-weight: 700;
+        font-size: 190%;
+        background: rgba(59, 55, 55, 0.253);
+        padding: 10px 20px;
+        border-radius: 20px;
+        box-sizing: border-box;
+        border: 2px solid rgba(0, 0, 0, 0.02);
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 27px;
+    }
+    #resultSpin {
+        border-radius: 70px;
+        background: linear-gradient(to right, #9C27B0, #E040FB);
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        border: 1px solid #fff;
+        width: fit-content;
+    }
 }

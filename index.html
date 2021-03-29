@@ -20,39 +20,10 @@
     <head>
         <meta charset="utf-8"/>
         <title>SFDA love</title>
+        <link rel="shortcut icon" type="image/png" href="icone.png">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
-        <script type="text/javascript" >
-            function showSpin(Type) {
-                divSpin = document.getElementById("containSpin");
-                divSpin.className = "show";
-                divChoice = document.getElementById("containChoice");
-                divChoice.className = "hide";
-                randomLove(Type);
-            }
-            function randomLove(TypeName) {
-                ListBoyName = ["Nesta", "Gabriel", "Maxent", "Léo", "Raphaël", "Arthur", "Louis", "Lucas", "Adam", "Jules", "Gurvan", "Hugo", "Maël", "Liam", "Noah", "Paul", "Ethan", "Tiago", "Sacha", "Gabin", "Nathan", "Mohamed", "Amaury", "Tom", "Noé", "Théo", "Léon", "Martin", "Mathis", "Nolan", "Victor", "Timéo", "Enzo", "Marius", "Axel", "Antoine", "Robin", "Naël", "Amir", "Valentin", "Rayan", "Augustin", "Clément", "Eliott", "Samuel", "Marceau", "Baptiste", "Gaspard", "Maxence", "Yanis", "Malo", "Ibrahim", "Sohan", "Maxime", "Evan", "Nino", "Mathéo", "Simon", "Lyam", "Alexandre", "Naïm", "Thomas", "Milo", "Ismaël", "Owen", "Lenny", "Soan", "Ilyan", "Kylian", "Noa", "Oscar", "Ilyes", "Léandre", "Pablo", "Diego", "Mathys", "Joseph", "Ayoub", "Noam", "William", "Charles", "Basile", "Thiago", "Antonnin", "Logan", "Adrien", "Marin", "Jean", "Charly", "Esteban", "Noham", "Elio"];
-                ListGirlName = ["Emma", "Cassandre", "Jade", "Louise", "Alice", "Lina", "Chloé", "Rose", "Léa", "Mila", "Ambre", "Mia", "Anna", "Julia", "Inès", "Léna", "Juliette", "Zoé", "Manon", "Agathe", "Helena", "Lou", "Lola", "Camille", "Nina", "Jeanne", "Inaya", "Romy", "Eva", "Romane", "Léonie", "Iris", "Lucie", "Luna", "Adèle", "Sarah", "Louna", "Charlotte", "Margaux", "Olivia", "Sofia", "Charlie", "Victoria", "Victoire", "Margot", "Mya", "Clémence", "Alixe", "Aya", "Clara", "Elena", "Capucine", "Lana", "Lya", "Lyana", "Théa", "Léana", "Anaïs", "Gabrielle", "Emy", "Yasmine", "Mathilde", "Maëlys", "Alicia", "Lilou", "Apolline", "Roxanne", "Lise", "Assia", "Elise", "Lily", "Maria", "Maya", "Valentine", "Héloïse", "Marie", "Noémie", "Elsa", "Lisa", "Lila", "Alya", "Thaïs", "Ilyana", "Célia", "Candice", "Livia", "Zélie", "Salomé", "Constance", "Soline", "Emmy", "Maëlle", "Elena", "Maryam", "Amelia", "Amelina", "Joy", "Océnane", "Maïssa", "Arya"]
-                inputLove = document.getElementById("inputLove");
-                randomNumber = Math.floor(Math.random() * 90);
-                if (TypeName == 'Boy') {
-                    inputLove.value = ListGirlName[randomNumber]
-                }if (TypeName == 'Girl') {
-                    inputLove.value = ListBoyName[randomNumber]
-                }if (TypeName == 'BoyAndGirl') {
-                    fiftyFifty = Math.floor(Math.random() * 2);
-                    if (fiftyFifty == 0) {
-                        inputLove.value = ListBoyName[randomNumber]
-                    }
-                    if (fiftyFifty == 1) {
-                        inputLove.value = ListGirlName[randomNumber]
-                    }
-                    
-                }
-                
-            }
-        </script>
     </head>
     <body>
         <div id="containChoice">
@@ -94,7 +65,54 @@
         <div class="hide" id="containSpin" >
             <h1 class="bigTitle">Voulez vous connaitre le prénom de votre âme soeur ?</h1>
             <input id="inputLove" type="text" disabled="disabled">
-            <div id="resultSpin">Votre âme soeur est</div>
         </div>
+        <div class="Listes">
+            <p class="ZoneListeBoy">Liste des prénoms masculin (93)</p>
+            <p id="listBoy"></p>
+            <p class="ZoneListeGirl">Liste des prénoms féminin (102)</p>
+            <p id="listGirl"></p>
+        </div>
+        
+        <script type="text/javascript" >
+            function showSpin(Type) {
+                divSpin = document.getElementById("containSpin");
+                divSpin.className = "show";
+                divChoice = document.getElementById("containChoice");
+                divChoice.className = "hide";
+                randomLove(Type);
+            }
+            function randomLove(TypeName) {
+                zoneResultLove = document.getElementById("resultSpin");
+                // resultLove = zoneResultLove.innerHTML
+                ListBoyName = ["Nesta", "Gabriel", "Maxent", "Léo", "Raphaël", "Arthur", "Louis", "Lucas", "Adam", "Jules", "Gurvan", "Hugo", "Maël", "Liam", "Noah", "Paul", "Ethan", "Tiago", "Sacha", "Gabin", "Nathan", "Mohamed", "Amaury", "Tom", "Noé", "Théo", "Léon", "Martin", "Mathis", "Nolan", "Victor", "Timéo", "Enzo", "Marius", "Axel", "Antoine", "Robin", "Naël", "Amir", "Valentin", "Rayan", "Augustin", "Clément", "Eliott", "Samuel", "Marceau", "Baptiste", "Gaspard", "Maxence", "Yanis", "Malo", "Ibrahim", "Sohan", "Maxime", "Evan", "Nino", "Mathéo", "Simon", "Lyam", "Alexandre", "Naïm", "Thomas", "Milo", "Ismaël", "Owen", "Lenny", "Soan", "Ilyan", "Kylian", "Noa", "Oscar", "Ilyes", "Léandre", "Pablo", "Diego", "Mathys", "Joseph", "Ayoub", "Noam", "William", "Charles", "Basile", "Thiago", "Antonnin", "Logan", "Adrien", "Marin", "Jean", "Charly", "Esteban", "Noham", "Elio"];
+                console.log(ListBoyName.length)
+                ListGirlName = ["Emma", "Cassandre", "Jade", "Louise", "Alice", "Lina", "Chloé", "Rose", "Léa", "Mila", "Ambre", "Mia", "Anna", "Julia", "Inès", "Léna", "Juliette", "Olympe", "Zoé", "Manon", "Agathe", "Helena", "Lou", "Lola", "Camille", "Nina", "Jeanne", "Inaya", "Romy", "Eva", "Romane", "Léonie", "Iris", "Lucie", "Luna", "Adèle", "Sarah", "Louna", "Megane", "Charlotte", "Margaux", "Olivia", "Sofia", "Charlie", "Victoria", "Victoire", "Margot", "Mya", "Clémence", "Alixe", "Aya", "Clara", "Elena", "Capucine", "Lana", "Lya", "Lyana", "Théa", "Léana", "Anaïs", "Gabrielle", "Emy", "Yasmine", "Mathilde", "Maëlys", "Alicia", "Lilou", "Apolline", "Roxanne", "Lise", "Assia", "Elise", "Lily", "Maria", "Maya", "Valentine", "Héloïse", "Marie", "Noémie", "Elsa", "Lisa", "Lila", "Alya", "Thaïs", "Ilyana", "Célia", "Candice", "Livia", "Zélie", "Salomé", "Constance", "Soline", "Emmy", "Maëlle", "Elena", "Maryam", "Amelia", "Amelina", "Joy", "Océnane", "Maïssa", "Arya"]
+                inputLove = document.getElementById("inputLove");
+                
+                if (TypeName == 'Boy') {
+                    randomNumberGirl = Math.floor(Math.random() * 103);
+                    inputLove.value = ListGirlName[randomNumberGirl]
+                    // resultLove = "<div id='resultSpin'>Votre âme soeur est" + ListGirlName[randomNumberGirl] + "</div>"
+                }if (TypeName == 'Girl') {
+                    randomNumberBoy = Math.floor(Math.random() * 93);
+                    inputLove.value = ListBoyName[randomNumberBoy]
+                    // resultLove = "<div id='resultSpin'>Votre âme soeur est" + ListBoyName[randomNumberBoy] + "</div>"
+                }if (TypeName == 'BoyAndGirl') {
+                    fiftyFifty = Math.floor(Math.random() * 2);
+                    if (fiftyFifty == 0) {
+                        randomNumberBoy = Math.floor(Math.random() * 93);
+                        inputLove.value = ListBoyName[randomNumberBoy]
+                        // resultLove = "<div id='resultSpin'>Votre âme soeur est" + ListBoyName[randomNumberBoy] + "</div>"
+                    }
+                    if (fiftyFifty == 1) {
+                        randomNumberGirl = Math.floor(Math.random() * 103);
+                        inputLove.value = ListGirlName[randomNumberGirl]
+                        // resultLove = "<div id='resultSpin'>Votre âme soeur est" + ListGirlName[randomNumberGirl] + "</div>"
+                    }
+                    
+                }
+                
+            }
+        </script>
     </body>
 </html>

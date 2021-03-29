@@ -1,0 +1,38 @@
+.contain {
+    text-align: center;
+    color: black;
+}
+.bigTitle {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+#inputLove {
+    width: 40%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 110%;
+    background: rgba(136, 126, 126, 0.253);
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+}
+.buttonSpin {
+    cursor: pointer;
+    border-radius: 70px;
+    color: #fff;
+    background: linear-gradient(to right, #9C27B0, #E040FB);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 45%;
+    font-size: 18px;
+    border: 1px solid #fff;
+    width: 10%
+    ;
+}
